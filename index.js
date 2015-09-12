@@ -8,7 +8,6 @@ var server = http.createServer(function(req, res) {
     fs.readFile('./data/text.json', function (err, data) {
       if (err) throw err;
       var parsed = data.toString();
-      console.log(parsed + "\nHey, this is on the server side");
 
       res.writeHead(200, {
         'Content-Type': 'text/plain'
