@@ -57,7 +57,7 @@ describe('index.js', function() {
         });
     });
 
-    it('should write to a new file', function () {
+    it('should write to a another new file', function () {
       expect(response.text).to.eql("hello again!");
     });
   });
